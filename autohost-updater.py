@@ -44,3 +44,4 @@ for (dirpath, dirnames, filenames) in walk(syspath):
 for i in needed_dlls:
     copy2(str(syspath+i), str(sharepath))
 print("Copied Updated: Dll's to "+sharepath+" from "+syspath+"\nCompleted.")
+exit(0)
