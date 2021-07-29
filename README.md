@@ -31,7 +31,11 @@ The Host scripts can be located anywhere on your host computer and runs on start
 
 **NOTE:**
 
-_This list can be modified to include more files or directories needed for other drivers that need to match with the host machine. You can do this by editing the list in `needed_dlls` in `autohost-updater.py` & `autovm-updater.py`. **So long as both lists are identical on both the Host and VM scripts, it should work.** Another thing to keep in mind is anything that is stored in your **hub** folder is deleted and updated with new files from your host machine afte each reboot or trigger._
+> _This list can be modified to include more files or directories needed for other drivers that need to match with the host machine. You can do this by editing the list in `needed_dlls` in `autohost-updater.py` & `autovm-updater.py`. **So long as both lists are identical on both the Host and VM scripts, it should work.**_
+
+**WARNING:**
+
+> **DO NOT STORE ANYTHING IMPORTANT IN THE HUB FOLDER AS IT WILL BE DELETED & RECREATED UPON REBOOT!**
 
 ## VM Script:
 Basically the reverse of the Host script; the VM Script deletes the old files and folders aformentioned in the list above from System32 on your VM, and replaces them with the newly copied files and folders stored in your **hub** folder which is kept updated by the host script. For easy deployment in **Task Scheduler**, `AutoVMUpdater.bat` just calls on `autovm-updater.py`.
