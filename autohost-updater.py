@@ -1,9 +1,10 @@
 from os import walk
 from shutil import copy2, rmtree, copytree
 
+
+sharepath = "//<host>/Share/Maintenance/Drivers/" # Edit to path of Share drive
 check = "nv_dispi.inf_amd64_"
 syspath = "C:/Windows/System32/"
-sharepath = "//<host>/Share/Maintenance/Drivers/" # Edit to path of Share drive
 folders = []
 dlls = []
 needed_dlls = {
@@ -24,13 +25,15 @@ for (dirpath, dirnames, filenames) in walk(str(syspath+"DriverStore/FileReposito
     break
 file = nvidiafile.pop()
 
-# Delete old files in Share drive:
+# Delete old Share directory:
 while True:
     try:
         rmtree(str(sharepath))
     except:
         break
 print("Deleted old files & folders in: "+sharepath)
+
+# Create '*/DriverStore/FileRepository/' and paste 'nv_dispi.inf_amd64_*' into sharepath. 
 copytree(str(syspath+"DriverStore/FileRepository/"+file), str(sharepath+file))
 print("Copied: "+file+" to "+sharepath)
 
