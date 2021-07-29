@@ -3,7 +3,7 @@ from shutil import copy2, rmtree, copytree
 
 check = "nv_dispi.inf_amd64_"
 syspath = "C:/Windows/System32/"
-sharepath = "//Quantum7/Share/Cuda_Drivers/" # Edit to path of Share drive
+sharepath = "//<host>/Share/Maintenance/Drivers/" # Edit to path of Share drive
 folders = []
 dlls = []
 needed_dlls = {
