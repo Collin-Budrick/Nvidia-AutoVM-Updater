@@ -7,7 +7,7 @@ This tool is meant to ease the process for vGPU passthough for VM's by automatin
 _I recommend taking the time to read the explanation first; as it tends to help avoid confusion should you get lost while reading the steps. Keep in mind that these scripts **DO NOT** create new VM's with vGPU support; instead this assumes you have setup your Windows 10 or higher VM(s) with vGPU partitioned as specified in the Reddit post above._
 
 ## Explanation:
-This script has a **parent** and **child** script that work in unison. Below is explaining how both work:
+This script has a **Host** and **VM** script that work in unison. Below is explaining how both work:
 
 ### Parent Script:
 
