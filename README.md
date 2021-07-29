@@ -9,11 +9,23 @@ This tool is meant to ease the process for vGPU passthough for VM's by automatin
 _I recommend taking the time to read the explanation first; as it tends to help avoid confusion should you get lost while reading the steps. Keep in mind that these scripts **DO NOT** create new VM's with vGPU support; instead this assumes you have setup your Windows 10 or higher VM(s) with vGPU partitioned as specified in the Reddit post above._
 
 ## Explanation:
-This script has a **Host** and **VM** script that work in unison. Below is explaining how both work:
+This script has a **Host** and **VM** script that work in unison. Both use Windows built-in **Task Scheduler** to push and pull files from a shared folder on your host to your VM's. Below is explaining how both work:
 
-### Host Script:
+## Host Script:
+The Host scripts can be located anywhere on your host computer and runs on startup, however this can be changed to any trigger using **Task Scheduler**. `AutoHostUpdater.bat` calls on `autohost-updater.py` and copies following `Nv*.dll` files and Nvidia display folder. Pasting them into a Shared folder you create:
 
+**.DLL Files:** 
 
+    'NvAgent.dll', 
+    'nvapi64.dll', 
+    'nvaudcap64v.dll', 
+    'nvEncodeAPI64.dll', 
+    'nvcuda.dll',  
+    'NvFBC64.dll', 
+    'NvIFROpenGL.dll', 
+    'nvcuvid.dll'
+
+**Nvidia Display Folder:** `nv_dispi.inf_amd64_000000...`
 
 ### VM Script:
 
