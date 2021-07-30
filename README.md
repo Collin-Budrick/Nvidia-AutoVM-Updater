@@ -24,6 +24,7 @@ The Host scripts can be located anywhere on your host computer and runs on start
     NvFBC64.dll
     NvIFROpenGL.dll
     nvcuvid.dll
+    ffff
 
 **Nvidia Display Folder:** 
 
