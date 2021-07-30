@@ -50,5 +50,5 @@ _Assuming you followed the Reddit [**post**](https://www.reddit.com/r/sysadmin/c
 3. Next, open `autohost-updater.py` in the repository you downloaded with the IDE of your choosing - **notepad works too**. 
 4. Paste the Share path of the **hub** folder you created in step 2 into the `sharepath` variable.
 5. You will need to do step 4 again for `autovm-updater.py` - Such that they both point to where the **hub** folder is.
-6. Continuing...
+6. Continuing.
 
