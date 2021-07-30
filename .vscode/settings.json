@@ -5,8 +5,8 @@
     "spellright.documentTypes": [
         "markdown",
         "latex",
-        "plaintext",
-        "python"
+        "python",
+        "plaintext"
     ],
     "cSpell.ignoreWords": [
         "dll"
