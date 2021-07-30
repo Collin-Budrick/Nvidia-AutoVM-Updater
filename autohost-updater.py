@@ -33,7 +33,7 @@ while True:
         break
 print("Deleted old files & folders in: "+sharepath)
 
-# Create '*/DriverStore/FileRepository/' and paste 'nv_dispi.inf_amd64_*' into sharepath. 
+# Create '*/DriverStore/FileRepository/' and paste 'nv_dispi.inf_amd64_*' into Share path. 
 copytree(str(syspath+"DriverStore/FileRepository/"+file), str(sharepath+file))
 print("Copied: "+file+" to "+sharepath)
 
@@ -46,5 +46,5 @@ for (dirpath, dirnames, filenames) in walk(syspath):
 # Get New Nvidia folder and files from System32:
 for i in needed_dlls:
     copy2(str(syspath+i), str(sharepath))
-print("Copied Updated: Dll's to "+sharepath+" from "+syspath+"\nCompleted.")
+print("Copied Updated: .dll to "+sharepath+" from "+syspath+"\nCompleted.")
 exit(0)
