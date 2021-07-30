@@ -5,10 +5,19 @@
     "spellright.documentTypes": [
         "markdown",
         "latex",
-        "python",
-        "plaintext"
+        "python"
     ],
     "cSpell.ignoreWords": [
+        "autovm",
         "dll"
+    ],
+    "cSpell.enableFiletypes": [
+        "bat"
+    ],
+    "cSpell.words": [
+        "nvapi",
+        "nvaudcap",
+        "nvcuda",
+        "nvcuvid"
     ]
 }
