@@ -1,6 +1,6 @@
 # Nvidia AutoVM Updater For Hyper-V
 
-![Thumbnail](https://lh3.googleusercontent.com/pw/AM-JKLVhskFWC9qPScinCU32KrVMTqTbMW1-06caQ69hVOHKMA88XeMfE1aNIK4FkQm_zs8Exk95kkVlREUroCPPIeUFpKi0y1WF7_jeXYjTf-n4g21oIV8VIMHCcnUqFAUN43koGy02YfDLxILv82bRCA8sHw=w1207-h894-no?authuser=0)
+![Thumbnail](https://lh3.googleusercontent.com/pw/AM-JKLUJDLBkOcwMW3nvWzlUpLfa3HVdoUWsQe01jNI1xckhizcJBroMQcIWsSQ7AfdhO6G6j8B-8Bf9ystsfqRNVZOre4s-WdYcLL9Yc1TKWYkCwX0it7HsTZEzWSokMBhff1akJ4uB8CIjR2YCB83IdXd9DQ=w990-h718-no?authuser=0)
 
 ## What Does this do?
 This tool is meant to ease the process for vGPU partitioned VM's by automating the labor of moving files & directories from a host machine to VM's everytime you update your graphics drivers. This is otherwise annoying as whenever updating Nvidia drivers, you have to copy the new folders and DLL files from your hosts System32 and place them in every VM individually. This aims to fix that completely on both old and newly created VM's. The original steps are listed in the later part of the instructions on this Reddit post which you can find [**here**](https://www.reddit.com/r/sysadmin/comments/jym8xz/gpu_partitioning_is_finally_possible_in_hyperv/).
