@@ -2,7 +2,7 @@
 
 ![Thumbnail](https://lh3.googleusercontent.com/pw/AM-JKLUJDLBkOcwMW3nvWzlUpLfa3HVdoUWsQe01jNI1xckhizcJBroMQcIWsSQ7AfdhO6G6j8B-8Bf9ystsfqRNVZOre4s-WdYcLL9Yc1TKWYkCwX0it7HsTZEzWSokMBhff1akJ4uB8CIjR2YCB83IdXd9DQ=w990-h718-no?authuser=0)
 
-## What Does this do?
+## What does this do?
 This tool is meant to ease the process for vGPU partitioned VM's by automating the labor of moving files & directories from a host machine to VM's every time you update your graphics drivers. This is otherwise annoying as whenever updating Nvidia drivers, you have to copy the new folders and DLL files from your hosts System32 and place them in every VM individually. This aims to fix that completely on both old and newly created VM's. The original steps are listed in the later part of the instructions on this Reddit post which you can find [**here**](https://www.reddit.com/r/sysadmin/comments/jym8xz/gpu_partitioning_is_finally_possible_in_hyperv/).
 
 ## Tips & Disclaimers:
@@ -46,9 +46,9 @@ Basically the reverse of the Host script; the VM Script deletes the old files an
 _Assuming you followed the Reddit [**post**](https://www.reddit.com/r/sysadmin/comments/jym8xz/gpu_partitioning_is_finally_possible_in_hyperv/) and now have a fully vGPU partitioned VM. We can now setup the graphic driver automation between them using these scripts._
 
 1. First download or clone the GitHub repository on your **Host** machine - This can be anywhere.
-2. Create a [**Share**](https://pureinfotech.com/setup-network-file-sharing-windows-10/) folder for which you would like to be the **hub** for the scripts to push and pull files from - This can also be anywhere.
-3. Next, open `autohost-updater.py` in the repository you downloaded with the IDE of your choosing - **notepad works too**. 
-4. Paste the Share path of the **hub** folder you created in step 2 into the `sharepath` variable.
-5. You will need to do step 4 again for `autovm-updater.py` - Such that they both point to where the **hub** folder is.
-6. Continuing...888
+2. ~~Create a [**Share**](https://pureinfotech.com/setup-network-file-sharing-windows-10/) folder for which you would like to be the **hub** for the scripts to push and pull files from - This can also be anywhere.~~
+3. ~~Next, open `autohost-updater.py` in the repository you downloaded with the IDE of your choosing - **notepad works too**.~~
+4. ~~Paste the Share path of the **hub** folder you created in step 2 into the `sharepath` variable.~~
+5. ~~You will need to do step 4 again for `autovm-updater.py` - Such that they both point to where the **hub** folder is.~~
+6. Continuing...
 
