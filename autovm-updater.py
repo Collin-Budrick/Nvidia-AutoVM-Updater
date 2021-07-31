@@ -1,5 +1,16 @@
-from os import remove, rmdir, walk, mkdir
+from os import getenv, remove, rmdir, walk, mkdir, system
+import os
 from shutil import copy2, rmtree, copytree
+
+print(os.environ['HOSTVM'])
+
+
+
+'''
+
+powershell.exe Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters" | Select-Object HostName
+echo HOSTVM%
+'powershell "$env:HostVM"'
 
 sharepath = "//Quantum7/Share/Cuda_Drivers/" # Edit to path of Share drive
 syspath = "C:/Windows/System32/"
@@ -47,3 +58,4 @@ for i in needed_dlls:
 print("Copied new Nvidia DLL files from: "+sharepath)
 copytree(str(sharepath+file), str(syspath+"HostDriverStore/FileRepository/"+file))
 print("Copied: "+file+" to "+syspath+"\nCompleted.") [exit(0)]
+'''
