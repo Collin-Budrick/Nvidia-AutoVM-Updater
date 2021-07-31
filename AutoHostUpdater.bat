@@ -1,4 +1,12 @@
 echo off
-python "c:/Users/Collin/Documents/Python Development/Host-Driver-Updater/autohost-updater.py"
-echo "Running"
+mkdir "%APPDATA%\DriverHub\scripts"
+mkdir "%APPDATA%\DriverHub\share"
+Net Share DriverHub=%APPDATA%\DriverHub
+Cacls %APPDATA%\DriverHub /e /r Everyone
+Cacls %APPDATA%\DriverHub /e /g Everyone:F
+pause
+exit /b
+
+python "%APPDATA%/DriverHub/scripts/autohost-updater.py"
+
 exit /b
